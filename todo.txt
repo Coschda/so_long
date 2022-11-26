@@ -1,0 +1,72 @@
+Checks :
+
+x Seulement : 0, 1, C, E, P, K
+x Minimum : 1 E, 1 C, 1 P
+x Maximum : 1 E, 1 P
+x Forme rectangulaire
+x Carte enfermee par des murs
+x Chemin valide existe
+x Si erreur de config detecter, return Error\n et quitter normalement
+
+Algo :
+
+x Ne pas bouger dans les murs
+x Prendre le consummable
+x Autoriser la fin des lvl que si on a prit tous les consummables
+x Compter le nb de mouvements
+x Perdre contre ennemi
+
+Bugs :
+
+x Segfault map de 1
+x Changer tous les printf
+x Check tous les mallocs
+x Free tous les mallocs :
+	malloc :
+		x **rep(copy_map)
+		x oui
+		x a.wd
+		x ft_itoa
+		x str_joinn
+
+Render :
+
+x Nombre de mouvements
+x Murs
+x Sol (0)
+x Sortie
+x Item
+x Ennemis
+
+Extra :
+
+- (EXTRA) Taille des sprites en fonction de la taille de la map.
+- (EXTRA) Sprint pour bouger de 2 cases.
+- (EXTRA) Attack to kill ennemies
+
+---------------------------------------------------------------------------
+
+Subject :
+
+x Bouger personnage avec WASD
+x Ne pas se deplacer dans les Murs
+x Compte total de mouvement afficher
+
+x Afficher une image dans une fenetre
+x Gestion de fenetre fluide ?
+x ESC pour quitter le programme
+x Croix doit quitter et fermer le programme
+x Utiliser les images de MLX
+
+x Dans carte : 0 vide, 1 mur, C item, E sortie, P position de depart
+x Doit contenir au moins 1 sortie, 1 item et 1 position de depart
+x Carte forme rectangulaire
+x Carte doit etre enfermer par des murs, sinon erreur
+x Verifier qu'un chemin valide existe
+x Si erreur de config detecter, return Error\n et quitter normalement
+
+Bonus :
+
+- Le joueur perd si toucher par patrouille ennemie
+x Sprite animation
+x Compte total de mouvement afficher sur le jeu
