@@ -6,7 +6,7 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/21 10:04:47 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/11/26 05:06:44 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/11/27 01:20:52 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ void	key_hook(mlx_key_data_t keydata, void *param)
 	free(temp);
 }
 
-int	check_args(int argc, char *argv[])
+int	check_args(int argc)
 {
 	if (argc < 2)
 	{
@@ -82,7 +82,7 @@ int32_t	main(int argc, char *argv[])
 {
 	t_oui	*oui;
 
-	if (!check_args(argc, argv) || !check_map(argv[1]))
+	if (!check_args(argc) || !check_map(argv[1]))
 		return (1);
 	oui = malloc(sizeof(t_oui));
 	if (!oui)

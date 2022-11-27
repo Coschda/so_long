@@ -6,7 +6,7 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/26 04:03:46 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/11/26 05:05:50 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/11/27 01:22:47 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 char	**copy_map(char *path)
 {
 	char	**rep;
-	char	*tmp;
 	char	*buf;
 	int		fd;
 	int		j;

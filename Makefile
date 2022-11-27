@@ -6,7 +6,7 @@
 #    By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/22 13:44:41 by mdoumi            #+#    #+#              #
-#    Updated: 2022/11/26 04:12:29 by mdoumi           ###   ########.fr        #
+#    Updated: 2022/11/27 01:18:10 by mdoumi           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ SRCS =	srcs/main.c \
 GCC = gcc -Wall -Wextra -Werror
 
 $(NAME):
-	gcc $(SRCS) libmlx42.a -I include -lglfw -L "/Users/mdoumi/.brew/opt/glfw/lib/"
+	$(GCC) $(SRCS) -o $(NAME) libmlx42.a -I include -lglfw -L "/Users/mdoumi/.brew/opt/glfw/lib/"
 
 all: $(NAME)
 

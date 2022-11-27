@@ -6,7 +6,7 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 09:54:30 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/11/26 05:19:04 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/11/27 01:20:48 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ typedef struct s_point
 
 void		quit_program(t_oui *oui);
 void		key_hook(mlx_key_data_t keydata, void *param);
-int			check_args(int argc, char *argv[]);
+int			check_args(int argc);
 void		init_oui(t_oui *oui, char *argv[]);
 int32_t		main(int argc, char *argv[]);
 

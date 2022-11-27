@@ -6,7 +6,7 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 18:22:02 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/11/26 05:17:02 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/11/27 01:21:46 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	check_square(char **map)
 {
 	int		i;
-	int		x;
+	size_t	x;
 
 	i = 0;
 	x = ft_strlen(map[i]);
@@ -36,7 +36,6 @@ int	check_walls(char **map)
 	int		i;
 	int		j;
 	int		tmp;
-	char	*last;
 
 	j = -1;
 	while (map[0][++j])
@@ -83,7 +82,6 @@ int	check_minmax(char **map)
 	int		i;
 	int		j;
 	int		cmp[3];
-	char	*buf;
 
 	i = 0;
 	cmp[0] = 0;
