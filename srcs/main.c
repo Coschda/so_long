@@ -6,7 +6,7 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/21 10:04:47 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/11/28 15:51:32 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/11/28 15:53:45 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,7 @@ int32_t	main(int argc, char *argv[])
 	t_oui	*oui;
 
 	if (!check_args(argc) || !check_map(argv[1]))
-		return (1);
+		exit(-1);
 	oui = malloc(sizeof(t_oui));
 	if (!oui)
 		return (1);
