@@ -6,7 +6,7 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/26 02:13:01 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/11/27 01:23:55 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/11/28 18:37:07 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	*fill(char **tab, t_point size, t_point cur, char wall)
 	static int	c[2] = {0, 0};
 
 	if (cur.y < 0 || cur.y >= size.y || cur.x < 0 || cur.x >= size.x
-		|| tab[cur.y][cur.x] == wall)
+		|| tab[cur.y][cur.x] == wall || tab[cur.y][cur.x] == 'K')
 		return (NULL);
 	if (tab[cur.y][cur.x] == 'C')
 		c[0]++;
