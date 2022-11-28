@@ -6,7 +6,7 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 09:54:30 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/11/27 01:20:48 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/11/28 11:37:46 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,6 +86,7 @@ char		*ft_itoa(int n);
 char		*ft_strjoinn(char const *s1, char const *s2);
 char		*ft_substr(char const *s, unsigned int start, size_t len);
 int			ft_bigstrlen(char **map);
+void		quit_program2(t_oui *oui);
 
 //gameutils.c
 

@@ -6,7 +6,7 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/26 04:05:51 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/11/26 04:37:15 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/11/28 11:37:36 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,4 +98,14 @@ int	ft_bigstrlen(char **map)
 	while (map[i] != NULL)
 		i++;
 	return (i);
+}
+
+void	quit_program2(t_oui *oui)
+{
+	ft_printf("Mouvements : %d\n", oui->count + 1);
+	mlx_delete_image(oui->mlx, oui->n0);
+	mlx_close_window(oui->mlx);
+	free(oui->map);
+	free(oui);
+	exit(0);
 }

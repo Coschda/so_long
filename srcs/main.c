@@ -6,7 +6,7 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/21 10:04:47 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/11/27 01:20:52 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/11/28 11:37:53 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ void	quit_program(t_oui *oui)
 	mlx_close_window(oui->mlx);
 	free(oui->map);
 	free(oui);
+	exit(0);
 }
 
 void	key_hook(mlx_key_data_t keydata, void *param)
