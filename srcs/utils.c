@@ -6,7 +6,7 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 10:56:59 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/11/26 05:16:58 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/11/28 15:52:06 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ int	s_open(char *path)
 	if (fd == -1)
 	{
 		ft_printf("Error, Couldn't open the map.\n");
-		return (-1);
+		exit(-1);
 	}
 	return (fd);
 }
