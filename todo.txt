@@ -2,7 +2,7 @@ Checks :
 
 - Remove todo.txt and .a file
 - Make enemies move
-- Check si on ouvre un dossier
+x Check si on ouvre un dossier
 x Check si on ouvre un .ber
 x Seulement : 0, 1, C, E, P, K
 x Minimum : 1 E, 1 C, 1 P
