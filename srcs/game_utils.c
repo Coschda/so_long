@@ -6,7 +6,7 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/26 04:03:46 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/11/27 01:22:47 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/12/04 01:24:59 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,22 +38,22 @@ int	display_error(int a, int b, int c)
 {
 	if (a > 1)
 	{
-		ft_printf("Error, Too much exits.\n");
+		ft_printf("Error\nToo much exits.\n");
 		return (0);
 	}
 	if (a < 1)
 	{
-		ft_printf("Error, Too few exits.\n");
+		ft_printf("Error\nToo few exits.\n");
 		return (0);
 	}
 	if (b <= 0)
 	{
-		ft_printf("Error, Too few consumables.\n");
+		ft_printf("Error\nToo few consumables.\n");
 		return (0);
 	}
 	if (c != 1)
 	{
-		ft_printf("Error, More or less than one spawn point.\n");
+		ft_printf("Error\nMore or less than one spawn point.\n");
 		return (0);
 	}
 	return (1);

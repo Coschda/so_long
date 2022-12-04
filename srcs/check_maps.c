@@ -6,7 +6,7 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 18:22:02 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/11/27 01:21:46 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/12/04 01:24:59 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	check_square(char **map)
 	{
 		if (ft_strlen(map[i]) != x)
 		{
-			ft_printf("Error, map is not a rectangle.\n");
+			ft_printf("Error\nmap is not a rectangle.\n");
 			return (0);
 		}
 		i++;
@@ -68,7 +68,7 @@ int	check_only(char **map)
 		{
 			if (!in(map[i][j], "01ECPK\n"))
 			{
-				ft_printf("Error, Unknown character in map.\n");
+				ft_printf("Error\nUnknown character in map.\n");
 				return (0);
 			}
 		}
@@ -106,16 +106,16 @@ int	check_minmax(char **map)
 
 int	check_map(char *path)
 {
-	int		i;
 	char	**map;
 
+	if (!check_ber(path))
+		return (0);
 	map = copy_map(path);
-	i = 0;
 	if (!check_square(map))
 		return (0);
 	if (!check_walls(map))
 	{
-		ft_printf("Error, map is not closed with walls.\n");
+		ft_printf("Error\nmap is not closed with walls.\n");
 		return (0);
 	}
 	if (!check_only(map))

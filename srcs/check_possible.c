@@ -6,7 +6,7 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/26 02:13:01 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/11/28 18:37:07 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/12/04 01:24:59 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,6 +92,6 @@ int	check_possible(char **map, char *path)
 			player_pos(map), '1');
 	if (check[1] == 1 && check[0] == nb)
 		return (1);
-	ft_printf("Error, map is not doable.\n");
+	ft_printf("Error\nmap is not doable.\n");
 	return (0);
 }

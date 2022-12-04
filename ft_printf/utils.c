@@ -6,9 +6,10 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 09:41:52 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/11/08 12:21:26 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/12/04 00:41:23 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libftprintf.h"
 
 static	int	ft_lenint(long int n)
@@ -26,11 +27,9 @@ static	int	ft_lenint(long int n)
 
 static	void	int_in_str(char *str, long int nb)
 {
-	int	i;
 	int	len;
 
 	len = ft_lenint(nb) -1;
-	i = 0;
 	while (len >= 0)
 	{
 		str[len] = '0' + nb % 10;

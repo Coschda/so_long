@@ -6,7 +6,7 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/21 10:04:47 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/11/28 15:53:45 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/12/04 01:24:59 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,12 +54,12 @@ int	check_args(int argc)
 {
 	if (argc < 2)
 	{
-		ft_printf("Error, No map has been passed.\n");
+		ft_printf("Error\nNo map has been passed.\n");
 		return (0);
 	}
 	if (argc > 2)
 	{
-		ft_printf("Error, Too many arguments.\n");
+		ft_printf("Error\nToo many arguments.\n");
 		return (0);
 	}
 	return (1);

@@ -6,7 +6,7 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 09:54:30 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/11/28 11:37:46 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/12/04 01:23:10 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,6 +102,10 @@ int			check_walls(char **map);
 int			check_only(char **map);
 int			check_minmax(char **map);
 int			check_map(char *path);
+
+//check_maps2.c
+
+int			check_ber(char *path);
 
 //check_possible.c
 

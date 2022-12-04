@@ -6,11 +6,18 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/26 03:54:08 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/11/28 11:41:17 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/12/04 01:32:12 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../solong.h"
+
+void	move_ennemies(t_oui *oui)
+{
+	//Get whpp to parse the oui->map
+	//Find every K and have an int that switches from 1 to 0
+	//Check either right or left depending on the bool and if it's a 0, move it
+}
 
 int	c_y(char c, int nb, t_oui *oui)
 {
