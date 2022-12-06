@@ -6,9 +6,9 @@
 #    By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/22 13:44:41 by mdoumi            #+#    #+#              #
-#    Updated: 2022/11/27 01:34:20 by mdoumi           ###   ########.fr        #
+#    Updated: 2022/12/06 09:07:40 by mdoumi           ###   ########.fr        #
 #                                                                              #
-# *************************************************************************** #
+# **************************************************************************** #
 
 NAME = so_long
 
@@ -17,6 +17,7 @@ SRCS =	srcs/main.c \
 		srcs/utils2.c \
 		srcs/render.c \
 		srcs/check_maps.c \
+		srcs/check_maps2.c \
 		srcs/check_possible.c \
 		srcs/can_move.c \
 		srcs/game_utils.c \

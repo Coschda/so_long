@@ -6,7 +6,7 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 09:54:30 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/12/04 01:23:10 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/12/06 09:40:35 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ typedef struct s_oui
 	int				p_x;
 	int				p_y;
 	int				count;
+	int				k_count;
 }	t_oui;
 
 typedef struct s_stuff
@@ -116,10 +117,11 @@ int			check_possible(char **map, char *path);
 
 //can_move.c
 
+int			count_k(t_oui *oui);
 int			c_y(char c, int nb, t_oui *oui);
 int			c_m(char c, int nb, t_oui *oui);
 
-//ft_printf.c
+//ft_printf
 
 char		*ft_strdup(const char *str, int *error);
 int			ft_intstr(char *s, int mal, int *error);

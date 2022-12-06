@@ -6,7 +6,7 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/21 10:04:47 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/12/04 01:24:59 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/12/06 09:41:43 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,7 @@ void	init_oui(t_oui *oui, char *argv[])
 	oui->p_y = oui->whpp[3];
 	oui->mlx = mlx_init(oui->whpp[0] * SIZE,
 			oui->whpp[1] * SIZE + 30, "so_long", true);
+	oui->k_count = count_k(oui);
 }
 
 int32_t	main(int argc, char *argv[])

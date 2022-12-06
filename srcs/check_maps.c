@@ -6,7 +6,7 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 18:22:02 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/12/04 01:24:59 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/12/06 10:14:48 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	check_square(char **map)
 	{
 		if (ft_strlen(map[i]) != x)
 		{
-			ft_printf("Error\nmap is not a rectangle.\n");
+			ft_printf("Error\nMap is not a rectangle.\n");
 			return (0);
 		}
 		i++;
@@ -115,7 +115,7 @@ int	check_map(char *path)
 		return (0);
 	if (!check_walls(map))
 	{
-		ft_printf("Error\nmap is not closed with walls.\n");
+		ft_printf("Error\nMap is not closed with walls.\n");
 		return (0);
 	}
 	if (!check_only(map))
