@@ -6,7 +6,7 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 09:54:30 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/12/06 09:40:35 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/12/06 10:40:56 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,6 +94,7 @@ void		quit_program2(t_oui *oui);
 char		**copy_map(char *path);
 int			display_error(int a, int b, int c);
 void		player_find(char *buf, int *wd, int h);
+void		mini_init(int *h, int *fd, char *path, char **buf);
 int			*get_whpp(char *path);
 
 //check_maps.c
@@ -107,6 +108,7 @@ int			check_map(char *path);
 //check_maps2.c
 
 int			check_ber(char *path);
+int			count_k(t_oui *oui);
 
 //check_possible.c
 

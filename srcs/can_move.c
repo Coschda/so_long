@@ -6,62 +6,38 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/26 03:54:08 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/12/06 10:12:51 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/12/06 12:27:36 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../solong.h"
 
-int	count_k(t_oui *oui)
+void	show_it(t_oui *oui, int y, int x, int c)
 {
-	int	k_count;
-	int	i;
-	int	j;
+	char	tmp;
 
-	k_count = 0;
-	i = 0;
-	while (i < oui->whpp[1])
-	{
-		j = 0;
-		while (j < oui->whpp[0])
-		{
-			if (oui->map[i][j] == 'K')
-				k_count++;
-			j++;
-		}
-		i++;
-	}
-	return (k_count);
+	tmp = oui->map[y][x];
+	oui->map[y][x] = oui->map[y][c];
+	oui->map[y][c] = tmp;
+	render_sprite(oui, c, y, "assets/bee.png");
+	render_sprite(oui, x, y, "assets/flower(1)(1).png");
 }
 
 void	move_it(t_oui *oui, int y, int x)
 {
 	static int	boul = 0;
 	static int	count = 0;
-	char		tmp;
 
 	if (boul < oui->k_count)
 	{
 		if (oui->map[y][x + 1] == '0')
-		{
-			tmp = oui->map[y][x];
-			oui->map[y][x] = oui->map[y][x + 1];
-			oui->map[y][x + 1] = tmp;
-			render_sprite(oui, x + 1, y, "assets/bee.png");
-			render_sprite(oui, x, y, "assets/flower(1)(1).png");
-		}
+			show_it(oui, y, x, x + 1);
 		boul++;
 	}
 	else if (boul >= oui->k_count)
 	{
 		if (oui->map[y][x - 1] == '0')
-		{
-			tmp = oui->map[y][x];
-			oui->map[y][x] = oui->map[y][x - 1];
-			oui->map[y][x - 1] = tmp;
-			render_sprite(oui, x - 1, y, "assets/bee.png");
-			render_sprite(oui, x, y, "assets/flower(1)(1).png");
-		}
+			show_it(oui, y, x, x - 1);
 		count++;
 		if (count >= oui->k_count)
 		{

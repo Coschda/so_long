@@ -6,7 +6,7 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/26 04:03:46 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/12/04 01:24:59 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/12/06 12:24:41 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,17 @@ void	player_find(char *buf, int *wd, int h)
 
 void	mini_init(int *h, int *fd, char *path, char **buf)
 {
+	char	c;
+	int		fakefd;
+
+	fakefd = s_open(path);
+	if (!read(fakefd, &c, 1))
+	{
+		ft_printf("Error\nEmpty Map.\n");
+		close(fakefd);
+		exit(0);
+	}
+	close(fakefd);
 	*h = 0;
 	*fd = s_open(path);
 	*buf = get_next_line(*fd);
