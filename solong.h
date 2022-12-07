@@ -6,14 +6,14 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 09:54:30 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/12/06 10:40:56 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/12/07 11:36:11 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SOLONG_H
 # define SOLONG_H
 
-# define SIZE 64
+# define S 64
 # include <stdlib.h>
 # include <sys/types.h>
 # include <sys/stat.h>
@@ -50,6 +50,9 @@ typedef struct s_stuff
 	int			*wd;
 	char		*buf;
 	int			h;
+	t_oui		*oui;
+	char		*temp;
+	char		*tmp;
 }	t_stuff;
 
 typedef struct s_point

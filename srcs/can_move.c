@@ -6,7 +6,7 @@
 /*   By: mdoumi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/26 03:54:08 by mdoumi            #+#    #+#             */
-/*   Updated: 2022/12/06 12:27:36 by mdoumi           ###   ########.fr       */
+/*   Updated: 2022/12/07 11:31:23 by mdoumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,8 +72,6 @@ int	c_y(char c, int nb, t_oui *oui)
 	{
 		if (oui->map[oui->p_y + nb][oui->p_x] == '1')
 			return (0);
-		if (oui->map[oui->p_y + nb][oui->p_x] == 'K')
-			quit_program2(oui);
 		if (oui->map[oui->p_y + nb][oui->p_x] == 'C')
 		{
 			oui->map[oui->p_y + nb][oui->p_x] = '0';
@@ -95,8 +93,6 @@ int	c_m(char c, int nb, t_oui *oui)
 	{
 		if (oui->map[oui->p_y][oui->p_x + nb] == '1')
 			return (0);
-		if (oui->map[oui->p_y][oui->p_x + nb] == 'K')
-			quit_program2(oui);
 		if (oui->map[oui->p_y][oui->p_x + nb] == 'C')
 		{
 			oui->map[oui->p_y][oui->p_x + nb] = '0';
