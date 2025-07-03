@@ -27,10 +27,10 @@ SRCS =	srcs/main.c \
 		ft_printf/utils.c \
 		ft_printf/utils2.c
 
-GCC = gcc -Wall -Wextra -Werror
+GCC = gcc 
 
 $(NAME):
-	$(GCC) $(SRCS) -o $(NAME) libmlx42.a -I include -lglfw -L "/Users/mdoumi/.brew/opt/glfw/lib/"
+	$(GCC) $(SRCS) -o $(NAME) libmlx42.a -Iinclude -ldl -lglfw -pthread -lm
 
 all: $(NAME)
 
